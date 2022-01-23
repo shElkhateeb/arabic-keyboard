@@ -1,6 +1,6 @@
 :root{
-    --key-size: 6.5vw;
-    --letter-size: 5vw;
+    --key-size: 5vw;
+    --letter-size: 3.5vw;
 }
 
 #textArea {
@@ -34,6 +34,11 @@
     justify-content: center;
 }
 
+#row4 {
+    display: grid;
+    justify-content: center;
+}
+
 button {
     width: var(--key-size);
     height: var(--key-size);
@@ -43,4 +48,8 @@ button {
     font-size: var(--letter-size);
     text-align: center;
     margin: 1px;
+}
+
+#space {
+    width: calc(var(--key-size)*4);
 }
