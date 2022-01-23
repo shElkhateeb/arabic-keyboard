@@ -4,7 +4,6 @@
 }
 
 #textArea {
-    width: 100vw;
     height: 40vh;
     background-color: rgb(228, 235, 238);
     border: 2px solid black;
@@ -42,5 +41,6 @@ button {
     background-color: black;
     border-radius: 5px;
     font-size: var(--letter-size);
+    text-align: center;
     margin: 1px;
 }
