@@ -1,0 +1,46 @@
+:root{
+    --key-size: 6.5vw;
+    --letter-size: 5vw;
+}
+
+#textArea {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(228, 235, 238);
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#keyboard {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+}
+
+#row1 {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    justify-content: center;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    justify-content: center;
+}
+
+#row3 {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-content: center;
+}
+
+button {
+    width: var(--key-size);
+    height: var(--key-size);
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: var(--letter-size);
+    margin: 1px;
+}
