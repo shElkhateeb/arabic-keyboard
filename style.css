@@ -31,7 +31,7 @@
 
 #row3 {
     display: grid;
-    grid-template-columns: repeat(10, auto);
+    grid-template-columns: repeat(11, auto);
     justify-content: center;
 }
 
@@ -49,6 +49,12 @@ button {
     font-size: var(--letter-size);
     text-align: center;
     margin: 1px;
+}
+
+#shift.on {
+    background-color: white;
+    color: black;
+    font-size: calc(var(--letter-size)*0.7);
 }
 
 #space {
