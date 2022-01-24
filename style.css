@@ -11,31 +11,36 @@
     margin: 5px;
 }
 
-#keyboard {
+#keyboard,
+#keyboard-up {
     display: grid;
     justify-content: center;
     margin: 10px;
 }
 
-#row1 {
+#keyboard-up {
+    display: none;
+}
+
+.row1 {
     display: grid;
     grid-template-columns: repeat(12, auto);
     justify-content: center;
 }
 
-#row2 {
+.row2 {
     display: grid;
     grid-template-columns: repeat(11, auto);
     justify-content: center;
 }
 
-#row3 {
+.row3 {
     display: grid;
     grid-template-columns: repeat(11, auto);
     justify-content: center;
 }
 
-#row4 {
+.row4 {
     display: grid;
     justify-content: center;
 }
@@ -51,12 +56,12 @@ button {
     margin: 1px;
 }
 
-#shift.on {
+#shift-on {
     background-color: white;
     color: black;
     font-size: calc(var(--letter-size)*0.7);
 }
 
-#space {
+.space {
     width: calc(var(--key-size)*4);
 }
