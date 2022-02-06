@@ -6,6 +6,7 @@ const shiftButtonOff = document.getElementById('shift-off');
 
 const textArea = document.getElementById('textArea');
 
+// Scroll to end of text area
 function updateScroll(){
     textArea.scrollTop = textArea.scrollHeight;
 }
