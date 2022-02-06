@@ -6,6 +6,7 @@
 #textArea {
     height: 40vh;
     direction: rtl;
+    font-size: calc(1.2vw + 1.2vh);
     background-color: rgb(228, 235, 238);
     border: 2px solid black;
     margin: 5px;
