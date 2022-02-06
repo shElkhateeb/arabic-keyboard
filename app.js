@@ -6,6 +6,10 @@ const shiftButtonOff = document.getElementById('shift-off');
 
 const textArea = document.getElementById('textArea');
 
+function updateScroll(){
+    textArea.scrollTop = textArea.scrollHeight;
+}
+
 // Add text to text area
 function addText(event){
     // Make sure key is pressed
@@ -33,13 +37,13 @@ function addText(event){
         else if(event.target.className === 'bracket') {
             textArea.textContent += event.target.dataset.char;
         }
-        
         // Case a letter is pressed
         else {
             // Add this letter to text area
-            textArea.textContent += event.target.textContent;
+                textArea.textContent += event.target.textContent;
         }  
     }
+    updateScroll();
 }
 
 // Listen for pressing-keyboard event
