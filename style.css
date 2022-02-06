@@ -5,7 +5,7 @@
 
 #textArea {
     height: 40vh;
-    text-align: right;
+    direction: rtl;
     background-color: rgb(228, 235, 238);
     border: 2px solid black;
     margin: 5px;
