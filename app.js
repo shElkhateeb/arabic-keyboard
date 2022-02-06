@@ -29,6 +29,10 @@ function addText(event){
         else if(event.target.className === 'backspace') {
             textArea.textContent = textArea.textContent.slice(0, -1);
         }
+        // Case bracket key is pressed
+        else if(event.target.className === 'bracket') {
+            textArea.textContent += event.target.dataset.char;
+        }
         
         // Case a letter is pressed
         else {
