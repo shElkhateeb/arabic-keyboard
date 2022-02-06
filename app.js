@@ -25,6 +25,10 @@ function addText(event){
         else if(event.target.className === 'space') {
             textArea.textContent += ' ';
         }
+        // Case backspace is pressed
+        else if(event.target.className === 'backspace') {
+            textArea.textContent = textArea.textContent.slice(0, -1);
+        }
         
         // Case a letter is pressed
         else {

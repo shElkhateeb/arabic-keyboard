@@ -22,6 +22,12 @@
     display: none;
 }
 
+.row0 {
+    display: grid;
+    grid-template-columns: repeat(14, auto);
+    justify-content: center;
+}
+
 .row1 {
     display: grid;
     grid-template-columns: repeat(12, auto);
@@ -64,4 +70,9 @@ button {
 
 .space {
     width: calc(var(--key-size)*4);
+}
+
+.backspace {
+    width: calc(var(--key-size)*2);
+    font-size: calc(var(--letter-size)*0.5);
 }
