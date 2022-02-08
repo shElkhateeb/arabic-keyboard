@@ -28,20 +28,25 @@ function addText(event){
         }
         // Case space is pressed
         else if(event.target.className === 'space') {
-            textArea.textContent += ' ';
+            textArea.append(' ');
         }
         // Case backspace is pressed
         else if(event.target.className === 'backspace') {
             textArea.textContent = textArea.textContent.slice(0, -1);
         }
+        // Case newline keyline key is pressed
+        else if(event.target.className === 'new-line') {
+            const newLine = document.createElement('br');
+            textArea.append(newLine);
+        }
         // Case bracket key is pressed
         else if(event.target.className === 'bracket') {
-            textArea.textContent += event.target.dataset.char;
+            textArea.append(event.target.dataset.char);
         }
         // Case a letter is pressed
         else {
             // Add this letter to text area
-                textArea.textContent += event.target.textContent;
+            textArea.append(event.target.textContent);
         }  
     }
     updateScroll();

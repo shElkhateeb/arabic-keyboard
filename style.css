@@ -38,7 +38,7 @@
 
 .row2 {
     display: grid;
-    grid-template-columns: repeat(11, auto);
+    grid-template-columns: repeat(12, auto);
     justify-content: center;
 }
 
@@ -77,4 +77,8 @@ button {
 .backspace {
     width: calc(var(--key-size)*2);
     font-size: calc(var(--letter-size)*0.5);
+}
+
+.new-line {
+    width: calc(var(--key-size)*2);
 }
